@@ -1,33 +1,145 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100%;
+  width: 100vw; 
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+}
+
+/* .App > main {
+  height: 80%;
+} */
+
+.more {
+    height: 80vh;
+    width: 100vw;
+    background: red;
+}
+
+.header {
+  background: #f5f5f5;
+  height: 12%;
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid #707070;
+}
+
+.banner {
+  /* background: #f5f5f5; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  width: 40%;
+  height: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; 
 }
 
-.App-link {
-  color: #61dafb;
+.left-side > h1 {
+  position: absolute;
+  width: 30%;
+  top: 30%;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 10px;
+  font-size: 90px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-side > h2 {
+  position: relative;
+  top: 15%;
+  transform: rotate(90deg);
+  right: 25%;
+  font-size: 160px;
+  width: 5%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.right-side {
+  height: 100%;
+  width: 60%;
+}
+
+.orange-box {
+  height: 35%;
+  width: 60%;
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  background: rgba(244, 67, 2, 0.75);
+  z-index: 2;
+}
+
+.right-side > img {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 40%;
+}
+
+.right-side > h1 {
+  text-align: left;
+  margin: 0;
+  letter-spacing: 10px;
+  padding: 0;
+}
+
+.text-on-left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 45%;
+  top: 15%;
+}
+
+.text-on-left > h2 {
+  font-size: 35px;
+  margin: 0;
+  letter-spacing: 5px;
+  color: rgb(244, 67, 2);
+}
+.text-on-left > p {
+  width: 35%;
+  text-align: left;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.text-on-right {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+}
+
+.text-on-right > h2 {
+  font-size: 50px;
+  width: 100%;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.text-on-right > div {
+  content: "";
+  height: 7px;
+  background: black;
+  width: 100%;
+  position: relative;
+  bottom: 40px;
+  right: 0%;
+  
 }
